@@ -1,7 +1,6 @@
 # UTEP-Eats
 
-1. Program Overview
-    The application simulates an interactive food ordering experience, allowing users to...
+1. Program Overview: The application simulates an interactive food ordering experience, allowing users to...
     - Browse and select items from a pre-defined menu.
     - View the contents of their cart.
     - Clear the cart if needed.

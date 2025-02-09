@@ -12,14 +12,13 @@ class utepEats
 		//All the variables:
 		int menu = 0;
 		String foodOption = "";
-		String foodlist = "";
 		String yesNo = "";
 		int n = 0;
 		int totalnum = 0;
 		double add = 0;
 		double totalPrice = 0;
 		double totalTax = 0;
-		double tipP = 0;
+		int tipP = 0;
 		double tip = 0.0000;
 		int checkout;
 		
@@ -78,7 +77,7 @@ class utepEats
 					System.out.println(scnr2.nextLine());
 				}
 				
-				
+				scnr2.close();
 				//The user types the food they want:
 				System.out.println();
 				System.out.println("Please type the food you want to add:");
@@ -165,7 +164,7 @@ class utepEats
 					default:
 						System.out.println("----------------------------------------------");
 						System.out.println("Unavailable food.");
-						i = 0;//to not let the user put the number of quantity.
+						i = 0;//to not let the user pur the number of quantity.
 					
 				}
 				
@@ -275,8 +274,7 @@ class utepEats
 					{
 						case "yes":
 							System.out.println("How much? (%)");
-							tipP = scnr1.nextDouble();
-							
+							tipP = scnr1.nextInt();
 							
 							tip = totalPrice*(tipP/100) + 5; //the 5 is for the fee
 							break;
@@ -343,7 +341,9 @@ class utepEats
 		System.out.println(".");
 		System.out.println(".");
 		System.out.println("Thank you for shopping with UTEP eats! <3");
-		
+
+		scnr1.close();
 		//Goodbye!
 	}
+	
 }
